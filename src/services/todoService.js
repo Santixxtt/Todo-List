@@ -2,13 +2,13 @@ const API_URL = 'https://todo-list-production-721f.up.railway.app/api';
 
 const todoService = {
   async getAll() {
-    const res = await fetch(`${API_URL}/todos`);
+    const res = await fetch(`${API_URL}/todos/`);
     if (!res.ok) throw new Error('Error al obtener tareas');
     return res.json();
   },
 
   async create(todo) {
-    const res = await fetch(`${API_URL}/todos`, {
+    const res = await fetch(`${API_URL}/todos/`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(todo)
@@ -18,7 +18,7 @@ const todoService = {
   },
 
   async update(id, todo) {
-    const res = await fetch(`${API_URL}/todos/${id}`, {
+    const res = await fetch(`${API_URL}/todos/${id}/`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(todo)
@@ -28,7 +28,7 @@ const todoService = {
   },
 
   async delete(id) {
-    const res = await fetch(`${API_URL}/todos/${id}`, {
+    const res = await fetch(`${API_URL}/todos/${id}/`, {
       method: 'DELETE'
     });
     if (!res.ok) throw new Error('Error al eliminar tarea');
@@ -36,7 +36,7 @@ const todoService = {
   },
 
   async toggle(id) {
-    const res = await fetch(`${API_URL}/todos/${id}/toggle`, {
+    const res = await fetch(`${API_URL}/todos/${id}/toggle/`, {
       method: 'PATCH'
     });
     if (!res.ok) throw new Error('Error al actualizar tarea');
