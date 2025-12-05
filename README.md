@@ -1,16 +1,39 @@
-# React + Vite
+# Todo list 
+Puedes agregar, eliminar, editar y marcar como completado las tareas, esta desplegado en **railway** el backend, igualmente la base de datos con Mysql, el frontend esta desplegado en **Vercel**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologías 
+Para el desarrollo de este proyecto se necesita las siguientes tecnologías: 
+### Python 
+Vamos a usar python específicamente para desarrollar una API que es **Fastapi**.
+Para instalarlo haremos los siguientes comandos:
+```bash
+https://www.python.org/downloads/
+```
+Primero se necesita tener instalado python en nuestro espacio de trabajo, ahora vamos a instalar Fastapi:
 
-Currently, two official plugins are available:
+- Primero entraremos a la carpeta Backend y aquí se encontrará un archivo llamado requirements.txt, en este se encontrará todo lo que se necesita en el Backend para poder funcionar y solo sería instalarlo con el siguiente comando.
+```bash
+cd Todo_List/backend
+pip install -r requirements.txt
+```
+Con esto ya estaría todo preparado para el backend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## React
+Para esta parte necesitamos react y node.js 
+- Primero necesitamos instalar en el ordenador node.js ```https://nodejs.org/es/download```, recuerda instalar el que sea más compatible con tu ordenador.
 
-## React Compiler
+Seguido de esto podemos pasar a instalar React con los siguientes comandos:
+```bash
+npm install 
+npm i -D tailwindcss @tailwindcss/postcss @tailwindcss/cli
+npm i -D eslint prettier eslint-config-prettier eslint-plugin-react eslintplugin-react-hooks
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Con esto ya tendrias todo lo necesario para que este proyecto te sirva localmente, so olvides que para clonar el repositorio se hace ```git clone https://github.com/Santixxtt/Todo-List.git```.
 
-## Expanding the ESLint configuration
+Para ver los resultado aqui te paso el link del Frontend que es el primero y el segundo del backend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+https://todo-list-peach-seven-80.vercel.app/
+https://todo-list-production-721f.up.railway.app/
+```
