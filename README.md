@@ -550,5 +550,5 @@ npm run dev
 ## Desarrolladores
 
 **Desarrolador 1**: Santiago Tuta
-**Desarrolador 2**: Mariana Ruiz
 
+**Desarrolador 2**: Mariana Ruiz
