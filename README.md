@@ -102,21 +102,20 @@ Todo_List/
 │   ├── .env                         # Variables de entorno
 │   ├── .env.example                 # Plantilla de variables
 │   ├── requirements.txt             # Dependencias Python
-│   ├── Procfile                     # Configuración Railway
-│   └── railway.json                 # Configuración Railway
+│   ├── Procfile                     # Configuración Para el Despliegue en Railway
 │
 └── src/                             # Frontend
     ├── assets/
     │   └── (imágenes)
     ├── components/
-    │   ├── TodoForm.jsx             # Formulario de tareas
-    │   └── TodoItem.jsx             # Componente individual de tarea
+    │   ├── TodoForm.jsx             
+    │   └── TodoItem.jsx             
     ├── services/
-    │   └── todoService.js           # Servicio API
+    │   └── todoService.js           
     ├── App.css
-    ├── App.jsx                      # Componente principal
+    ├── App.jsx                      
     ├── index.css
-    └── main.jsx                     # Punto de entrada React
+    └── main.jsx                     
 ```
 
 ---
@@ -148,23 +147,12 @@ cd Todo_List
 cd backend
 ```
 
-#### 2. Crea un entorno virtual (recomendado)
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# Linux/Mac
-source venv/bin/activate
-```
-
-#### 3. Instala las dependencias
+#### 2. Instala las dependencias
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 4. Configura las variables de entorno
+#### 3. Configura las variables de entorno
 
 Crea un archivo `.env` en la carpeta `backend/`:
 ```bash
@@ -254,7 +242,7 @@ CREATE TABLE IF NOT EXISTS todos (
 ### Ejecutar el Backend
 ```bash
 cd backend
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 El servidor estará disponible en: `http://127.0.0.1:8000`
@@ -559,35 +547,8 @@ npm run dev
 
 ---
 
-## Contribuciones
+## Desarrolladores
 
-Las contribuciones son bienvenidas. Por favor:
+**Desarrolador 1**: Santiago Tuta
+**Desarrolador 2**: Mariana Ruiz
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
----
-
-## Licencia
-
-Este proyecto es de código abierto y está disponible bajo la licencia MIT.
-
----
-
-## Contacto
-
-**Autor**: Santiago
-**Repositorio**: [https://github.com/Santixxtt/Todo-List](https://github.com/Santixxtt/Todo-List)
-
----
-
-## Agradecimientos
-
-- FastAPI por el excelente framework
-- Railway por el hosting gratuito
-- Vercel por el despliegue del frontend
-- Tailwind CSS por los estilos
-- La comunidad de React y Python
